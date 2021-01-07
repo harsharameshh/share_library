@@ -1,8 +1,9 @@
 #!/usr/bin/env groovy
 
+package org.demo
 def call(String git_url,String gitbranch,String credentialsId,String stage ) {
   
-  def myUtils = new org.demo.gitutilits()
-   myUtils.stage(git_url,gitbranch)
+  def myUtils = new myUtils()
+   myUtils.checkout(git_url,gitbranch)
     
 }

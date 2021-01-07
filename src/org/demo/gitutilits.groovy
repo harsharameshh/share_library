@@ -7,7 +7,7 @@ def checkout(git_url,branch) {
 
 def intialize(nodeOs,repo)
 {
-  if(nodOs='windows')
+  if(nodeOs=="windows")
   {
     bat 'git init'
   }

@@ -1,4 +1,6 @@
-def call(string git_url,string gitbranch,string credentialsId) {
+#!/usr/bin/env groovy
+
+def call(String git_url,String gitbranch,String credentialsId) {
   echo git_url;
     echo gitbranch;
     echo credentialsId;

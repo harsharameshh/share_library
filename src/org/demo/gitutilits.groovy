@@ -43,7 +43,7 @@ def newbranch(nodeOs,git_url,branch)
   }
   else
   {
-    sh 'git branch amal '
+    sh 'git branch '"${branch}" ' '
   }
 }
   def branchcheckout(nodeOs,git_url,branch)

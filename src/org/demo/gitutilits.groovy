@@ -34,9 +34,9 @@ def status(nodeOs,git_url,branch)
 
 def newbranch(nodeOs,git_url,branch)
 {
-  echo "$branch" ;
+  echo "git branch "$branch" " ;
   if(nodeOs=="windows")
-  {
+  { 
     
     bat "git branch "$branch" "
   }

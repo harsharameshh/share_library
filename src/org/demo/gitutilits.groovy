@@ -36,11 +36,11 @@ def newbranch(nodeOs,git_url,branch)
 {
   if(nodeOs=="windows")
   {
-    bat 'git newbranch "$branch" '
+    bat 'git branch "$branch" '
   }
   else
   {
-    sh 'git newbranch "$branch"'
+    sh 'git branch "$branch"'
   }
 }
   def branchcheckout(nodeOs,git_url,branch)

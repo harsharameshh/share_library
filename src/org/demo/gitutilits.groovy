@@ -36,6 +36,7 @@ def newbranch(nodeOs,git_url,branch)
 {
   if(nodeOs=="windows")
   {
+    echo branch;
     bat 'git branch "$branch" '
   }
   else

@@ -43,7 +43,7 @@ def newbranch(nodeOs,git_url,branch)
     sh 'git newbranch "$branch"'
   }
 }
-  def checkout(nodeOs,git_url,branch)
+  def branchcheckout(nodeOs,git_url,branch)
 {
   if(nodeOs=="windows")
   {

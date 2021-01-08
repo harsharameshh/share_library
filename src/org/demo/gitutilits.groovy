@@ -34,26 +34,26 @@ def status(nodeOs,git_url,branch)
 
 def newbranch(nodeOs,git_url,branch)
 {
-  echo "git branch "$branch" " ;
+ 
   if(nodeOs=="windows")
   { 
     
-    bat "git branch "$branch" "
+    bat 'git branch '"$branch"' '
   }
   else
   {
-    sh 'git branch "$branch"'
+    sh 'git branch '"$branch"' '
   }
 }
   def branchcheckout(nodeOs,git_url,branch)
 {
   if(nodeOs=="windows")
   {
-    bat 'git checkout "$branch" '
+    bat 'git checkout '"$branch"' '
   }
   else
   {
-    sh 'git checkout "$branch"'
+    sh 'git checkout '"$branch"''
   }
 }  
 def add(nodeOs,git_url,branch)
